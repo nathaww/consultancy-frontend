@@ -1,0 +1,126 @@
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(196, 195, 195);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #7db3ce;
+}
+.bg {
+  background-image: url("/public/Images/lumBg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.bg-card {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.input-style {
+  @apply px-4 py-2 border border-gray-300 block rounded focus:outline-none focus:ring focus:border-primaryColor;
+}
+.btn {
+  @apply px-2 py-1.5 sm:px-4 sm:py-2 lg:px-4 lg:py-2 block rounded-full text-sm sm:text-base lg:text-base hover:cursor-pointer hover:bg-darkPrimaryColor transition-all duration-300 transform active:scale-95;
+}
+.btn-secondary {
+  @apply px-2 py-1.5 sm:px-4 sm:py-2 lg:px-4 lg:py-2 block rounded-full text-sm sm:text-base lg:text-base hover:cursor-pointer hover:bg-gray-400 transition-all duration-300 transform active:scale-95;
+}
+.btn-anim {
+  @apply transition-all transform duration-200 active:scale-95;
+}
+.card-shadow {
+  @apply shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] bg-white shadow-gray-200 w-full rounded border;
+}
+
+.page-break-container {
+  page-break-before: always;
+}
+
+.customModal {
+  background: #b2dbbf;
+  max-width: "90vw";
+  max-height: "90vh";
+  overflow: "auto";
+  border-radius: 10px;
+}
+
+#content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+  height: 400px;
+  max-width: 500px;
+  overflow-y: scroll;
+}
+
+.calendar-container {
+  width: 100%;
+  height: 80vh; /* Adjust the height as needed */
+  overflow-x: auto; /* Handle horizontal overflow */
+}
+
+@media (min-width: 1201px) {
+  .rbc-calendar {
+    font-size: 11px;
+    width: 800px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .rbc-calendar {
+    font-size: 11px;
+    width: 650px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 425px) {
+  .rbc-calendar {
+    font-size: 11px;
+    width: 350px;
+  }
+  .rbc-event {
+    font-size: 8px;
+  }
+  .rbc-calendar button {
+    font-size: 10px;
+  }
+  .rbc-button-link span {
+    font-size: 8px;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .rbc-calendar {
+    font-size: 11px;
+    width: 550px;
+  }
+  .rbc-event {
+    font-size: 8px;
+  }
+  .rbc-calendar button {
+    font-size: 10px;
+  }
+  .rbc-button-link span {
+    font-size: 8px;
+  }
+}
+
+.rbc-calendar {
+  border-radius: 10px;
+}
+.rbc-calendar button {
+  font-size: 14px;
+}
